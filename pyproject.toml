@@ -1,0 +1,25 @@
+[project]
+name = "surtr"
+version = "0.1.0"
+description = "Package for calculating optimal heating."
+authors = [
+    {name = "Sigurd Hofsmo Jakobsen", email = "sigurd.jakobsen@gmail.com"},
+]
+dependencies = [
+    "numpy>=1.25.2",
+    "ortools>=9.7.2996",
+    "pyomo>=6.6.2",
+]
+requires-python = ">=3.11"
+readme = "README.md"
+license = {text = "LGPL"}
+
+[project.optional-dependencies]
+examples = [
+    "jupyterlab>=4.0.6",
+    "ipykernel>=6.25.2",
+    "matplotlib>=3.8.0",
+]
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
